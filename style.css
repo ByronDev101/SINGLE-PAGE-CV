@@ -1,0 +1,221 @@
+:root {
+  --bg:#a7c0da;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0ea5e9;
+  --accent-2:#0369a1;
+  --radius:12px;
+  --maxw:900px;
+  --pad:20px;
+  --gap:16px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#0f172a;
+}
+#fullName { font-size:1.9rem; letter-spacing: -0.5px; }
+#title { font-size: .9rem; color: var(--muted); text-transform: uppercase; }
+
+
+
+button { transition: transform .12s, box-shadow .12s; }
+button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(3,105,161,.12); }
+:focus { outline: 3px solid rgba(14,165,233,.18); outline-offset: 2px; }
+
+
+/* General Layout */
+html,body {
+  height:100%;
+  margin:0;
+  background:var(--bg);
+}
+
+.wrap {
+  max-width:var(--maxw);
+  margin:32px auto;
+  padding:var(--pad);
+}
+
+.card {
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 6px 22px rgba(2,6,23,.06);
+  padding:32px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:var(--gap);
+}
+
+/* Profile Header */
+.profile {
+  display:flex;
+  gap:16px;
+  align-items:center;
+}
+
+.avatar {
+  width:88px;
+  height:88px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgb(241, 235, 235);
+  font-weight:700;
+  font-size:28px;
+}
+
+h1 {
+  font-size:1.5rem;
+  margin:0;
+}
+h3 {
+  color: rgb(12, 133, 189);
+  margin:4px 0 0 0;
+  font-weight:900;
+  font-size:1.1rem;
+}
+.header-row { 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  gap:16px; 
+}
+
+.muted {
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* Sections */
+.section {
+  margin-top:18px;
+  padding-top: 12px;
+  border-top: 1px solid #eef2f7;
+}
+/* Across the internet / Online links */
+.online-links {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: hsl(272, 48%, 39%);
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: hsl(272, 48%, 39%);
+}
+
+.link-item .label {
+  font-size: .75rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+
+.link-item a {
+  text-decoration: none;
+  font-size: .95rem;
+  color: hsl(272, 48%, 39%);
+  word-break: break-all;
+}
+
+.link-item a:hover,
+.link-item a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+
+.contact p {
+  margin:6px 0;
+}
+
+.label {
+  color: rgb(15, 23, 42);
+}
+  
+/* Skills */
+.skills {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:8px;
+}
+
+.skill {
+  background:#eef6fb;
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:600;
+  font-size:.9rem;
+}
+
+.add-skill {
+  margin-top:10px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+/* Buttons & Inputs */
+button {
+  background:var(--accent);
+  border:none;
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button.ghost {
+  background:transparent;
+  color:var(--accent);
+  border:1px solid #cfeffd;
+}
+
+input[type=text] {
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #e6eef6;
+}
+
+/* Responsive Design */
+@media (max-width:720px) {
+  .grid {
+    grid-template-columns:1fr;
+  }
+  .left {
+    order:2;
+  }
+}
+
+/* Print Style */
+@media print {
+  body {
+    background:white;
+  }
+  .wrap {
+    box-shadow:none;
+    margin:0;
+  }
+  .controls {
+    display:none;
+  }
+  :root {
+  --fs-base: 16px;
+  --line-height: 1.6;
+}
+html { font-size: var(--fs-base); }
+body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: var(--line-height); color: #0f172a; }
+h1 { font-size: 1.6rem; font-weight:700; }
+h3 { font-size: 1.05rem; font-weight:600; margin:0 0 .5rem 0; }
+p { margin:0 0 .75rem 0; }
+
+}

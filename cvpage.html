@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title ">Byron Mathews — CV</title>
+
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="grid">
+        <!-- Left Column -->
+        <aside class="left">
+          <div class="profile">
+            <div class="avatar" id="avatar">BM</div>
+            <div>
+              <h1 id="fullName">Byron Mathews</h1>
+              <div class="muted" id="title">Software Development Student</div>
+            </div>
+          </div>
+
+          <div class="section contact">
+            <h3>Contact</h3>
+            <p id="email">matbyron101@gmail.com</p>
+            <p id="phone">+254 715062330</p>
+            <p id="phone">+254 704057243</p>
+            <p id="location">Nairobi, Kenya</p>
+          </div>
+
+          <div class="section">
+            <h3>Skills</h3>
+            <div class="skills" id="skillsList"></div>
+            <div class="add-skill">
+              <input id="newSkill" placeholder="Add a new skill" />
+              <button id="addSkillBtn">Add</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Links</h3>
+            <p><a href="#" id="portfolio">Portfolio / GitHub</a></p>
+            <!-- Across the Internet (paste inside <aside class="left">) -->
+            <div class="section">
+              <h3 class="section-title"><span>Across the internet</span></h3>
+
+          <div class="online-links">
+            <div class="link-item">
+              <label class="label">GitHub</label>
+              <a id="github" href="#" target="_blank" rel="noopener noreferrer">github.com/your-username</a>
+              </div>
+
+          <div class="link-item">
+            <label class="label">LinkedIn</label>
+            <a id="linkedin" href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-name</a>
+          </div>
+
+          <div class="link-item">
+            <label class="label">Instagram</label>
+            <a id="instagram" href="#" target="_blank" rel="noopener noreferrer">instagram.com/your-handle</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+        <!-- Right Column -->
+        <main>
+          <div class="header-row">
+            <div class="summary">
+              <h3>Summary</h3>
+              <p id="summary">
+                Focused software development student building practical web and application projects.
+                Passionate about clean code, problem solving and continuous learning.
+              </p>
+            </div>
+            <div class="controls">
+              <button id="toggleEdit">Edit</button>
+              <button id="resetBtn" class="ghost">Reset</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Experience</h3>
+            <ul id="experience">
+              <li><strong>Web Developer Intern</strong> — Small Agency <br>
+                <span class="muted">Jun 2025 — Aug 2025</span>
+                <div>Built landing pages and maintained site content.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Education</h3>
+            <ul id="education">
+              <li><strong>KCA University</strong> — BSc Software Development <br>
+                <span class="muted">2025 — Present</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Projects</h3>
+            <ul id="projects">
+              <li><strong>Magical Kenya Travel Site</strong> — A travel agency demo site built with HTML/CSS/JS.</li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
