@@ -196,6 +196,42 @@ input[type=text] {
   }
 }
 
+/* Project Management */
+.add-project {
+  margin-top: 16px;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e6eef6;
+}
+
+.add-project.visible {
+  display: flex;
+}
+
+.add-project input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #e6eef6;
+  width: 100%;
+  font-size: 14px;
+}
+
+.add-project button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.delete-project {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  background: #ef4444;
+}
+
 /* Print Style */
 @media print {
   body {
